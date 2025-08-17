@@ -1,0 +1,11 @@
+{
+  "name": "shreyas_sevadaan_foundation",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "npx http-server . -p 8080",
+    "build": "echo 'Static site - no build needed'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}

@@ -1,0 +1,46 @@
+{
+  "slideshow_images": [
+    {
+      "filename": "community-workshop.jpg",
+      "title": "Community Workshop Series",
+      "description": "Our monthly workshops bring together families to learn new skills, share experiences, and build lasting connections within the neighborhood."
+    },
+    {
+      "filename": "youth-mentorship.jpg",
+      "title": "Youth Mentorship Program",
+      "description": "Young people in our mentorship program develop leadership skills while contributing to positive community change through service projects."
+    },
+    {
+      "filename": "family-support.jpg",
+      "title": "Family Support Services",
+      "description": "Our family counselors work closely with parents and children to strengthen relationships and develop healthy communication patterns."
+    },
+    {
+      "filename": "community-garden.jpg",
+      "title": "Community Garden Project",
+      "description": "Our community garden serves as both a source of fresh produce and a gathering space that brings neighbors together across cultural lines."
+    },
+    {
+      "filename": "training-session.jpg",
+      "title": "Professional Development",
+      "description": "Our staff regularly participates in training sessions to stay current with best practices in social work and community development."
+    }
+  ],
+  "gallery_items": [
+    {
+      "filename": "client-success.jpg",
+      "title": "Client Success Stories",
+      "description": "Celebrating the achievements and milestones of the individuals and families we serve in their journey toward stability and growth."
+    },
+    {
+      "filename": "volunteer-activities.jpg",
+      "title": "Volunteer Activities",
+      "description": "Our dedicated volunteers contribute thousands of hours annually, bringing their skills and passion to support our mission."
+    },
+    {
+      "filename": "community-events.jpg",
+      "title": "Community Events",
+      "description": "From cultural celebrations to educational workshops, our events strengthen community bonds and promote cross-cultural understanding."
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyas Sevadaan Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-content">
+            <div class="logo">Shreyas Sevadaan Foundation</div>
+            <nav>
+                <ul>
+                    <li><button class="nav-btn active" data-page="about">About Us</button></li>
+                    <li><button class="nav-btn" data-page="gallery">Gallery</button></li>
+                    <li><button class="nav-btn" data-page="contact">Contact Us</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Page -->
+    <div class="page active" id="about">
+        <div class="about-content" id="aboutContent">
+            <div class="loading-message">Loading About Us content...</div>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div class="page" id="gallery">
+        <div class="gallery-header">
+            <h1>Our Impact in Action</h1>
+            <p>Explore the stories, moments, and milestones that showcase our community's journey toward positive change.</p>
+        </div>
+
+        <div class="slideshow-container" id="slideshowContainer">
+            <!-- Slideshow will be populated by JavaScript -->
+        </div>
+
+        <div class="slide-indicators" id="slideIndicators">
+            <!-- Indicators will be populated by JavaScript -->
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be populated by JavaScript -->
+        </div>
+
+        <div class="empty-gallery" id="emptyGallery" style="display: none;">
+            <div class="icon">📸</div>
+            <h3>Gallery Coming Soon</h3>
+            <p>We're preparing to showcase our community impact photos. Please add images to the 'images/' directory to see them displayed here.</p>
+            <p><strong>Instructions:</strong> Place your images in the 'images/' folder and refresh the page.</p>
+        </div>
+    </div>
+
+    <!-- Contact Us Page -->
+    <div class="page" id="contact">
+        <div class="contact-header">
+            <h1>Connect With Us</h1>
+            <p>We're here to help and would love to hear from you. Reach out to learn more about our services or explore ways to get involved.</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <strong>Address:</strong><br>
+                        1247 Community Boulevard, Suite 300<br>
+                        Los Angeles, CA 90028
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <strong>Phone:</strong><br>
+                        Main: (323) 555-HOPE (4673)<br>
+                        Crisis Line: (323) 555-HELP (4357)
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <strong>Email:</strong><br>
+                        info@hopecommunity.org<br>
+                        programs@hopecommunity.org
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div>
+                        <strong>Hours:</strong><br>
+                        Monday - Friday: 8:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 3:00 PM<br>
+                        Sunday: Closed
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <div>
+                        <strong>Languages Spoken:</strong><br>
+                        English, Spanish, Korean, Arabic,<br>
+                        Mandarin, and American Sign Language
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h3>How Can We Help You?</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="engagement">How would you like to engage with us? *</label>
+                        <select id="engagement" name="engagement" required>
+                            <option value="">Please select an option</option>
+                            <option value="services">I'm interested in receiving services</option>
+                            <option value="volunteer">I want to volunteer</option>
+                            <option value="donate">I'd like to make a donation</option>
+                            <option value="partnership">I'm interested in a partnership</option>
+                            <option value="employment">I'm looking for employment opportunities</option>
+                            <option value="information">I need general information</option>
+                            <option value="other">Other (please specify in message)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredLanguage">Preferred Language</label>
+                        <select id="preferredLanguage" name="preferredLanguage">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="korean">Korean</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="mandarin">Mandarin</option>
+                            <option value="asl">American Sign Language</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell us more about how we can help *</label>
+                        <textarea id="message" name="message" placeholder="Please describe your needs, questions, or how you'd like to get involved with our foundation..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image Modal -->
+<div class="modal" id="imageModal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+        <img id="modalImage" src="" alt="">
+        <div class="modal-caption" id="modalCaption"></div>
+        <button class="modal-nav modal-prev" onclick="modalChangeImage(-1)">❮</button>
+        <button class="modal-nav modal-next" onclick="modalChangeImage(1)">❯</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
