@@ -5,6 +5,10 @@ handlers:
     static_files: index.html
     upload: index.html
 
+  - url: /images/(.*)
+    static_files: images/\1
+    upload: images/.*
+
   - url: /(.*)
     static_files: \1
     upload: (.*)
