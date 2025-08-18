@@ -122,44 +122,17 @@ async function loadGalleryImages() {
 
 // Get image files from images directory
 async function getImageFiles() {
-    const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
-    const imageFiles = [];
-
     try {
-        // Try to read common image files
-        const commonImages = [
-            'community-workshop.jpg', 'youth-mentorship.jpg', 'family-support.jpg',
-            'community-garden.jpg', 'training-session.jpg', 'client-success.jpg',
-            'volunteer-activities.jpg', 'community-events.jpg'
-        ];
-
-        for (const filename of commonImages) {
-            try {
-                await fetch(`images/${filename}`);
-                imageFiles.push(filename);
-            } catch (e) {
-                // File doesn't exist, skip
-            }
+        const response = await fetch('images/index.json');
+        if (response.ok) {
+            const data = await response.json();
+            return data.images;
         }
-
-        // Try to find any other images (this is a simplified approach)
-        // In a real scenario, you'd need to list directory contents
-        for (let i = 1; i <= 20; i++) {
-            for (const ext of imageExtensions) {
-                try {
-                    await fetch(`images/image${i}${ext}`);
-                    imageFiles.push(`image${i}${ext}`);
-                } catch (e) {
-                    // File doesn't exist, skip
-                }
-            }
-        }
-
     } catch (error) {
-        console.log('Images directory not accessible');
+        console.log('Could not load image index:', error);
     }
 
-    return imageFiles;
+    return [];
 }
 
 // Show empty gallery message
